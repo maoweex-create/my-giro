@@ -294,3 +294,559 @@ img {
     padding: 30px 0 47px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
+
+.katalog-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.filtr {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    margin: 0 -11px 0 0;
+    padding: 0;
+}
+
+.filtr-link {
+    display: block;
+    padding: 6px 11px;
+    border-radius: 16px;
+    color: #222;
+    font-size: 15px;
+    line-height: 19px;
+}
+
+.filtr-link.active {
+    background: #FFA019;
+    color: #fff;
+}
+
+.tovary {
+    display: flex;
+    gap: 30px;
+    margin-top: 57px;
+}
+
+.tovar {
+    position: relative;
+    flex: 1 1 0;
+    min-width: 0;
+    background: #fff;
+    padding-bottom: 25px;
+}
+
+.tovar-tag {
+    position: absolute;
+    top: 18px;
+    left: 0;
+    padding: 0 20px 0 18px;
+    height: 22px;
+    line-height: 22px;
+    background: #FFA019;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 0 11px 11px 0;
+}
+
+.tovar-img {
+    display: block;
+    width: 100%;
+    height: 210px;
+    margin: 20px 0 0;
+    object-fit: contain;
+}
+
+.tovar-name {
+    display: flex;
+    align-items: flex-end;
+    height: 40px;
+    margin: 0;
+    padding: 0 48px 0 38px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #222;
+}
+
+.tovar-price {
+    margin: 14px 0 0;
+    padding-left: 38px;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 700;
+    color: #222;
+}
+
+/* Консультанты */
+.komanda {
+    padding-top: 50px;
+    padding-bottom: 140px;
+}
+
+.konsultanty {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.konsultant {
+    display: flex;
+    gap: 14px;
+}
+
+.konsultant-foto {
+    flex: 0 0 auto;
+    width: 170px;
+    height: 198px;
+    object-fit: cover;
+}
+
+.konsultant-info {
+    padding-top: 14px;
+}
+
+.konsultant-name {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 0 11px;
+}
+
+.konsultant-role {
+    font-size: 12px;
+    line-height: 14px;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 12px;
+}
+
+.btn-write {
+    display: block;
+    width: 93px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #FFA019;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+/* Бренды */
+.brendy {
+    background: #fafafa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 190px;
+    font-size: 28px;
+    font-weight: 700;
+    color: #b0b0b0;
+}
+
+.brendy span {
+    white-space: nowrap;
+}
+
+/* Полезная информация */
+.poleznoe {
+    padding-top: 70px;
+    padding-bottom: 90px;
+}
+
+.stati {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.statya {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 22%;
+    aspect-ratio: 1 / 1;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 22px;
+}
+
+.statya::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+}
+
+.statya span {
+    position: relative;
+    padding: 0 35px;
+}
+
+/* Подвал */
+.footer {
+    background: #fafafa;
+    padding: 118px 0 80px;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-about {
+    flex: 0 0 562px;
+    padding-right: 246px;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 29px;
+    color: #a9a9a9;
+}
+
+.footer-about p {
+    margin: 0 0 20px;
+}
+
+.footer-about p:nth-child(2),
+.footer-about .copy {
+    padding-left: 6px;
+}
+
+.footer-about p:last-child {
+    margin-bottom: 0;
+}
+
+.footer-col {
+    flex: 0 0 179px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.footer-col h4 {
+    margin: 0 0 27px;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #222;
+}
+
+.footer-col a {
+    color: #a9a9a9;
+}
+
+.footer-col a:hover {
+    color: #FFA019;
+}
+
+/* Плавные эффекты */
+.btn-call,
+.btn-stend,
+.btn-rass,
+.btn-write,
+.filtr-link,
+.tovar,
+.statya {
+    transition: background-color .2s, color .2s, box-shadow .2s, transform .2s;
+}
+
+.btn-call:hover,
+.btn-write:hover {
+    background-color: #e88a00;
+}
+
+.btn-stend:hover {
+    background-color: #FFA019;
+    color: #fff;
+}
+
+.btn-rass:hover {
+    background-color: #f2f2f2;
+}
+
+.filtr-link:hover {
+    background: #FFA019;
+    color: #fff;
+}
+
+.tovar:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+    transform: translateY(-3px);
+}
+
+.statya:hover {
+    transform: scale(1.03);
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+
+    .text-rass {
+        flex: 0 1 280px;
+        margin-right: 20px;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .input-rass {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .btn-rass {
+        flex: 0 0 170px;
+    }
+
+    .konsultant-foto {
+        width: 130px;
+        height: 152px;
+    }
+
+    .konsultant-name {
+        font-size: 18px;
+    }
+
+    .brendy {
+        font-size: 22px;
+    }
+
+    .footer-about {
+        flex: 1 1 auto;
+        padding-right: 60px;
+    }
+
+    .footer-col {
+        flex: 0 0 160px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+
+    .zagolovok {
+        font-size: 28px;
+    }
+
+    .menu-link {
+        margin-left: 12px;
+    }
+
+    .preimushestva-list {
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .preimushestva-item {
+        width: 50%;
+    }
+
+    .rass-inner {
+        flex-wrap: wrap;
+    }
+
+    .text-rass {
+        flex: 0 0 100%;
+        margin: 0 0 5px;
+    }
+
+    .btn-rass {
+        margin-left: 0;
+        flex: 0 0 170px;
+    }
+
+    .osobenosti-table td {
+        font-size: 16px;
+    }
+
+    .osobenosti-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .tovary {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .tovar {
+        flex: 0 0 calc(50% - 15px);
+    }
+
+    .komanda {
+        padding-bottom: 80px;
+    }
+
+    .konsultanty {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px 40px;
+    }
+
+    .brendy {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 40px;
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .footer-inner {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .footer-about {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+
+    .footer-col {
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+
+    .hed {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .m-menu {
+        display: block;
+        background: transparent;
+        border: none;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+    }
+
+    .mennu {
+        position: absolute;
+        right: 0;
+        top: 45px;
+        padding: 20px;
+        flex-direction: column;
+        background-color: #fff;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .15);
+        border-radius: 10px;
+        z-index: 9;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10%);
+        transition: opacity .3s, transform .3s;
+    }
+
+    .menu-link {
+        margin: 0 0 12px;
+    }
+
+    .menu-link:last-child {
+        margin-bottom: 0;
+    }
+
+    .mennu.is-open {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .stend {
+        height: 450px;
+        padding: 0 20px;
+    }
+
+    .giro {
+        font-size: 36px;
+    }
+
+    .zagolovok {
+        font-size: 24px;
+    }
+
+    .strelci {
+        display: none;
+    }
+
+    .osobenosti-table,
+    .osobenosti-table tbody,
+    .osobenosti-table tr,
+    .osobenosti-table td {
+        display: block;
+        width: 100%;
+    }
+
+    .osobenosti-table tr {
+        margin-bottom: 15px;
+    }
+
+    .katalog-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .filtr {
+        flex-wrap: wrap;
+    }
+
+    .konsultanty {
+        flex-direction: column;
+    }
+
+    .stati {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+
+    .statya {
+        flex: 0 0 calc(50% - 15px);
+    }
+}
+
+@media (max-width: 480px) {
+    .preimushestva-item {
+        width: 100%;
+    }
+
+    .tovar {
+        flex: 0 0 100%;
+    }
+
+    .input-rass,
+    .btn-rass {
+        flex: 0 0 100%;
+    }
+
+    .statya {
+        flex: 0 0 100%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .brendy {
+        font-size: 18px;
+    }
+
+    .footer-col {
+        flex: 0 0 100%;
+    }
+}
