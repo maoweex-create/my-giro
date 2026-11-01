@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #222;
+    margin: 0;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    width: 90%;
+}
+
+.header {
+    background: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .15);
+    position: relative;
+    z-index: 2;
+}
+
+/* Шапка */
+.hed {
+    display: flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
+
+.btn-call {
+    display: block;
+    width: 130px;
+    padding: 9px 0;
+    margin-left: auto;
+    background-color: #FFA019;
+    border: 1px solid #FFA019;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 11px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hed-dva {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+}
+
+.logo {
+    height: 24px;
+}
+
+.menu {
+    display: flex;
+    position: relative;
+    margin-left: auto;
+}
+
+.m-menu {
+    display: none;
+}
+
+.mennu {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-left: 17px;
+}
+
+.a {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.a:hover {
+    color: #FFA019;
+}
+
+/* Главный экран */
+.stend {
+    height: 600px;
+    background: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, .55)), url('../img/stend.png') center / cover no-repeat;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.giro {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0 0 25px;
+}
+
+.txt-stend {
+    max-width: 600px;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 300;
+    margin: 0 0 30px;
+}
+
+.btn-stend {
+    background: #fff;
+    color: #222;
+    font-weight: 700;
+    font-size: 10px;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* Заголовки */
+.zagolov {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.zagolovok {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 0;
+}
+
+/* Преимущества */
+.preimushestva {
+    padding-top: 75px;
+}
+
+.strelci {
+    display: flex;
+    gap: 8px;
+}
+
+.preimushestva-list {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.preimushestva-item {
+    width: 25%;
+    text-align: center;
+}
+
+.preimushestva-kartinki {
+    height: 85px;
+}
+
+.nadpis {
+    font-size: 15px;
+    margin: 20px 0 0;
+}
+
+/* О нас */
+.onas {
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.onas-nadpisi {
+    margin-top: 40px;
+}
+
+.onadpis {
+    font-size: 18px;
+    line-height: 29px;
+    margin: 0 0 25px;
+}
+
+/* Рассылка */
+.rass {
+    background: #FFA019;
+    padding: 20px 0;
+}
+
+.rass-inner {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+
+.text-rass {
+    flex: 0 0 330px;
+    margin: 0 93px 0 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 29px;
+}
+
+.input-rass {
+    flex: 0 0 209px;
+    height: 38px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .75);
+    border-radius: 10px;
+    padding: 0 13px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 12px;
+}
+
+.input-rass::placeholder {
+    color: #fff;
+}
+
+.input-rass:focus {
+    outline: none;
+    border-color: #fff;
+    background: rgba(255, 255, 255, .15);
+}
+
+.btn-rass {
+    flex: 0 0 208px;
+    margin-left: 12px;
+    height: 50px;
+    line-height: 50px;
+    background: #fff;
+    border-radius: 8px;
+    text-align: center;
+    color: #222;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+/* Особенности */
+.osobenosti {
+    padding-top: 75px;
+    padding-bottom: 55px;
+}
+
+.osobenosti-table {
+    width: 100%;
+    margin-top: 46px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.osobenosti-table td {
+    padding: 0;
+    font-size: 18px;
+    line-height: 39px;
+}
+
+.osobenosti-table td:nth-child(1) {
+    width: 34.3%;
+}
+
+.osobenosti-table td:nth-child(2) {
+    width: 40.4%;
+}
+
+.osobenosti-text {
+    font-size: 18px;
+    line-height: 34px;
+    padding-left: 3px;
+    margin: 48px 0 0;
+}
+
+/* Каталог */
+.katalog {
+    background: #fafafa;
+    padding: 30px 0 47px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
